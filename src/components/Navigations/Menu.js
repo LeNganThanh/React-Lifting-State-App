@@ -11,7 +11,7 @@ export default function Menu({ pageWrapId }) {
     setIsMenuOpen(!isMenuOpen)
   }
   return (
-    <div className="container">
+    <div>
       <SideMenu isOpen={isMenuOpen} toggleMenu={toggleMenu}>
         <h4>
           Next Courses
@@ -27,7 +27,6 @@ export default function Menu({ pageWrapId }) {
         <SideMenuItem link="#">Part-time</SideMenuItem>
         <SideMenuItem link="#">Advanced React</SideMenuItem>
         <SideMenuItem link="#">React Native</SideMenuItem>
-        <Navbar toggleMenu={toggleMenu} />
       </SideMenu>
       <Navbar toggleMenu={toggleMenu} />
     </div>

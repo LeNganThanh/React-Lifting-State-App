@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Menu from './Navigations/Menu'
 import Header from './Header'
@@ -10,7 +10,9 @@ import Footer from './Footer'
 import Books from './Books'
 
 function App() {
-  /*  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  /* Bonus - can move isMenuOpen inside Menu component but that would not be the idea of "lifting state up" anymore
+  
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)

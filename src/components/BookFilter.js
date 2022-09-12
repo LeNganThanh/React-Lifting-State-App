@@ -28,7 +28,12 @@ export default function BookFilter() {
   ))
   return (
     <div>
-      <BookList tabItems={tabItems} books={books} />
+      <div className="row">
+        <div className="col-lg-12">
+          <ul className="nav nav-pills text-center">{tabItems}</ul>
+        </div>
+      </div>
+      <BookList books={books} />
     </div>
   )
 }

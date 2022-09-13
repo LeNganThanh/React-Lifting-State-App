@@ -4,7 +4,7 @@ import SideMenu from './Menus/SideMenu'
 import SideMenuItem from './Menus/SideMenuItem'
 import Navbar from '../Navbar'
 
-export default function Menu({ pageWrapId }) {
+const Menu({ pageWrapId }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -32,7 +32,7 @@ export default function Menu({ pageWrapId }) {
     </div>
   )
 }
-
+export default Menu
 /* const Menu = (props) => (
   <SideMenu isOpen={props.isOpen} toggleMenu={toggleMenu}>
     <h4>

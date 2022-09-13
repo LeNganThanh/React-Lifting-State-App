@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Navbar({ toggleMenu }) {
-  return (
+const Navbar =({ toggleMenu })=> (
+  <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
     <div className="container">
       <div className="navbar-header">
         <a className="navbar-brand" href="/">
@@ -19,5 +19,7 @@ export default function Navbar({ toggleMenu }) {
         </li>
       </ul>
     </div>
-  )
-}
+  </nav>
+)
+
+export default Navbar

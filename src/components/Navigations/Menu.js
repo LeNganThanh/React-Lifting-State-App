@@ -4,7 +4,7 @@ import SideMenu from './Menus/SideMenu'
 import SideMenuItem from './Menus/SideMenuItem'
 import Navbar from '../Navbar'
 
-const Menu({ pageWrapId }) {
+const Menu = ({ pageWrapId }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -33,24 +33,4 @@ const Menu({ pageWrapId }) {
   )
 }
 export default Menu
-/* const Menu = (props) => (
-  <SideMenu isOpen={props.isOpen} toggleMenu={toggleMenu}>
-    <h4>
-      Next Courses
-      <button
-        className="btn-link"
-        onClick={() => props.toggleMenu()}
-        style={{ cursor: 'pointer' }}
-      >
-        <i className="fa fa-close pull-right" />
-      </button>
-    </h4>
-    <SideMenuItem link="#">Bootcamp</SideMenuItem>
-    <SideMenuItem link="#">Part-time</SideMenuItem>
-    <SideMenuItem link="#">Advanced React</SideMenuItem>
-    <SideMenuItem link="#">React Native</SideMenuItem>
-    <Navbar toggleMenu={toggleMenu} />
-  </SideMenu>
-)
 
-export default Menu */
